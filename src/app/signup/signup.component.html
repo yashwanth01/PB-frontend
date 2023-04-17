@@ -1,0 +1,29 @@
+<div class="container">
+  <form id="contact" action="" method="post">
+    <h3>Sign Up Here!</h3>
+    <div>
+      <label for="username"></label>
+      <h4>Username</h4>
+      <input placeholder="Enter username" type="text" [(ngModel)]="username" name="username" tabindex="1" required autofocus>
+    </div>
+    <div>
+      <h4>Email Address</h4>
+      <input placeholder="Enter email Address" [(ngModel)]="email" type="email" name="email" tabindex="2" required >
+    </div>
+    <div>
+      <h4>Password</h4>
+      <label for="password"> </label>
+      <input placeholder="Enter password" [(ngModel)]="password" type="password" name="password" required>
+    </div>
+    <div>
+      <h4>Retype Password</h4>
+      <label for="password"> </label>
+      <input placeholder="Retype your password" [(ngModel)]="repassword" type="password" name="repassword" required>
+    </div>
+
+    <div>
+      <label for="username"></label>
+      <button id="loginbutton" (click)="registration()">SignUp</button>
+  </div>
+  </form>
+</div>
